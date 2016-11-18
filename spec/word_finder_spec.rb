@@ -1,21 +1,10 @@
 
 require('rspec')
-require('./lib/title_case')
+require('./lib/word_finer')
 
-describe('String#title_case') do
-  it("capitalizes the first letter of a word") do
-    expect(("beowulf").title_case()).to(eq("Beowulf"))
+describe('String#wprd_finder') do
+  it("will count the number of times peck occurs in the phrase") do
+    expect(("peck").word_finder("Peter Piper picked a peck of pickled peppers, where is the peck of pickled peppers Peter Piper picked")).to(eq("Input word of: peck, appears 2 times in the phrase"))
   end
 
-  it("capitalizes multiple word titles") do
-    expect(("beowulf begins").title_case()).to(eq("Beowulf Begins"))
-  end
-
-  it("does not capitalize designated words that are after the first word") do
-    expect(("from beowulf to the incredible hulk").title_case()).to(eq("From Beowulf to the Incredible Hulk"))
-  end
-
-  it("handles mixed case entries") do
-    expect(("This old beoWulf").title_case()).to(eq("This Old Beowulf"))
-  end
 end
