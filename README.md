@@ -22,6 +22,6 @@ ArgumentError:
      # ./lib/word_finder.rb:3:in `block in <class:String>'
      # ./spec/word_finder_spec.rb:7:in `block (2 levels) in <top (required)>'
 
-Debugging has been attempted using puts and pry, without success.
+Debugging has been attempted using pry, without success.
 
 MIT License.

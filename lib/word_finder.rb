@@ -1,4 +1,3 @@
-
 class String
   define_method(:word_finder) do |word_phrase|
     word = self
