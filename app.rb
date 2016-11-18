@@ -11,6 +11,6 @@ get('/results') do
   user_input = params[:results]
 puts(user_input)
   return_value = user_input.to_i
-  @results = return_value
+  @results = 27
   erb(:results)
 end
