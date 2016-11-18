@@ -7,7 +7,10 @@ get('/') do
   erb(:index)
 end
 
-get('/title') do
-  @title = params.fetch('title').title_case()
-  erb(:title)
+get('/results') do
+  user_input = parms.fetch('results')
+puts(user_input)
+  return_value = user_input.to_i
+  @results = return_value.word_count()
+  erb(:results)
 end
