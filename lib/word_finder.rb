@@ -13,6 +13,5 @@ class String
     end
 
     "Input word of: #{word}, appears #{count} times in the phrase"
-
   end
 end
