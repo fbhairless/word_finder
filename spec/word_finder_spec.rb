@@ -1,6 +1,6 @@
 
 require('rspec')
-require('./lib/word_finer')
+require('./lib/word_finder')
 
 describe('String#wprd_finder') do
   it("will count the number of times peck occurs in the phrase") do

@@ -1,6 +1,6 @@
 require('sinatra')
 require('sinatra/reloader')
-require('./lib/title_case')
+require('./lib/word_finder')
 also_reload('lib/**/*.rb')
 
 get('/') do
@@ -8,9 +8,9 @@ get('/') do
 end
 
 get('/results') do
-  user_input = parms.fetch('results')
+  user_input = params[:results]
 puts(user_input)
   return_value = user_input.to_i
-  @results = return_value.word_count()
+  @results = return_value
   erb(:results)
 end

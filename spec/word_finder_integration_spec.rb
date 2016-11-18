@@ -9,6 +9,6 @@ describe('the word finder', {:type => :feature}) do
     fill_in('word', :with => 'input word')
     fill_in('phrase', :with => 'input phrase')
     click_button('Send')
-    expect(page).to have_content('word and word count fron phrae')
+    expect(page).to have_content('word and word count fron phrsae')
   end
 end
