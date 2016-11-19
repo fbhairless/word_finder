@@ -11,6 +11,7 @@ class String
       end
     end
 
-    "Input word of: #{word}, appears #{count} times in the phrase"
+puts "Input word of: #{word}, appears #{count} times in the phrase"
+binding.pry
   end
 end

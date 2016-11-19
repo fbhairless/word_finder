@@ -1,7 +1,9 @@
 
-Author Name: Hal FairlessM
+Author Name: Hal Fairless
+
 Program Name:  word_finder
-URL: heroku URL goes here once identified
+
+URL: heroku URL https://evening-everglades-48935.herokuapp.com/
 
 Description:  The word_finder method takes user input of a word and a phrase and counts the number of times that word appears in the phrase.  It spits the phrase into the individual words and compares each word of the phrase to the input word. The method utilizes the downcase method against the input word and the input phrase to assure that case does not influence the comparison.  For each equal comparison the method then add to a counter, which is then used in the output
 
@@ -22,6 +24,6 @@ ArgumentError:
      # ./lib/word_finder.rb:3:in `block in <class:String>'
      # ./spec/word_finder_spec.rb:7:in `block (2 levels) in <top (required)>'
 
-Debugging has been attempted using pry, without success.
+Debugging has been attempted without success.
 
 MIT License.
