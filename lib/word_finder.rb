@@ -9,9 +9,9 @@ class String
       if word.downcase() == element.downcase
         count = count.+(1)
       end
+
     end
 
 puts "Input word of: #{word}, appears #{count} times in the phrase"
-binding.pry
   end
 end
