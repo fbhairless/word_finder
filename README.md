@@ -17,13 +17,6 @@ gem('pry')
 Run bundle.
 
 Known Bugs:
-unit testing fails in spec/word_finder_spec.rb
-
-ArgumentError:
-       wrong number of arguments (given 0, expected 1)
-     # ./lib/word_finder.rb:3:in `block in <class:String>'
-     # ./spec/word_finder_spec.rb:7:in `block (2 levels) in <top (required)>'
-
-Debugging has been attempted without success.
+  none
 
 MIT License.

@@ -9,8 +9,7 @@ get('/') do
 end
 
 get('/results') do
-  user_input = params.fetch('results')
-  return_value = user_input.to_i  
-  @results = return_value.word_finder()
+  word_finder = WordFinder.new(params.fetch('word'), params.fetch('phrase'))
+  @results = word_finder.count
   erb(:results)
 end

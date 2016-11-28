@@ -9,6 +9,6 @@ describe('the word finder', {:type => :feature}) do
     fill_in('word', :with => 'peck')
     fill_in('phrase', :with => 'Peter Piper pick a peck')
     click_button('Send')
-    expect(page).to have_content('the word peck, appears 1 time')
+    expect(page).to have_content('The Result is: 1')
   end
 end

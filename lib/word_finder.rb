@@ -1,17 +1,23 @@
-class String
-  define_method(:word_finder) do |word_phrase|
-    word = self
-    phrase = []
-    phrase = word_phrase.split()
+require 'pry'
+
+class WordFinder
+
+  attr_reader :word, :phrase
+
+  def initialize(word, phrase)
+    @word = word
+    @phrase = phrase
+  end
+
+  def count
     count = 0
+    individual_words = phrase.split()
 
-    phrase.each() do |element|
-      if word.downcase() == element.downcase
-        count = count.+(1)
+    individual_words.each do |individual_word|
+      if individual_word.downcase == word.downcase
+         count += 1
       end
-
     end
-
-puts "Input word of: #{word}, appears #{count} times in the phrase"
+    count
   end
 end
